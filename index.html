@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 id="title">One Piece Survey Form</h1>
+    <p id="description">Please fill the form, i need your help, thank you.</p>
+    <form action="" id="survey-form">
+      <label for="name" id="name-label">
+        Nama
+        <input type="text" id="name" placeholder="Enter your name" required />
+      </label>
+
+      <label for="email" id="email-label">
+        Email
+        <input type="email" id="email" placeholder="Enter your email" required />
+      </label>
+
+      <label for="age" id="number-label">
+        Age
+        <input type="number" id="number" placeholder="How old are you ?" min="14" max="40" />
+      </label>
+
+      <label for="dropdown" id="dropdown-label">
+        How do you know One Piece?
+        <select name="dropdown" id="dropdown">
+          <option value="">Test 1</option>
+          <option value="">Test 2</option>
+        </select>
+      </label>
+
+      <label for="character" id="character-label"> Who is your favorite character ? </label>
+      <input type="radio" name="character" value="luffy" checked /> Monkey D. Luffy <br />
+      <input type="radio" name="character" value="zoro" /> Roronoa Zoro <br />
+      <input type="radio" name="character" value="sanji" /> Sanji <br />
+      <input type="radio" name="character" value="robin" /> Nico Robin <br />
+      <input type="radio" name="character" value="nami" /> Nami <br />
+      <input type="radio" name="character" value="sogeking" /> Sogeking <br />
+      <input type="radio" name="character" value="merry" /> Going Merry <br />
+      <input type="radio" name="character" value="chopper" /> Chopper <br />
+      <input type="radio" name="character" value="frankie" /> Frankie <br />
+      <input type="radio" name="character" value="brook" /> Brook <br />
+
+      <br />
+      <label for="buah-iblis" id="buah-iblis-label"> Which one are your favorite buah iblis ? </label>
+      <input type="checkbox" value="gomu-gomu" /> Gomu-Gomu no Mi <br />
+      <input type="checkbox" value="bara-bara" /> Bara-Bara no Mi <br />
+      <input type="checkbox" value="mera-mera" /> Mera-Mera no Mi <br />
+      <input type="checkbox" value="awa-awa" /> Awa-Awa no Mi <br />
+      <br />
+
+      <label for="comments" id="comments-label">
+        Any comments and suggestion ?
+        <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+      </label>
+      <button id="submit" type="submit">Submit</button>
+    </form>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
